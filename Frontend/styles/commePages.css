@@ -1,0 +1,151 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* home page style start */
+.wellcome_container {
+  font-family: "Times New Roman", Times, serif;
+  height: 400px;
+  width: 500px;
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 100px;
+  text-align: center;
+  box-shadow: 1px 1px #b2b2b2;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+div > h1 {
+  padding: 10px, 10px, 10px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn-primary {
+  width: 80px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.btn-container {
+  margin-top: 70px;
+  text-align: center;
+}
+/* home page style end */
+
+/* login page style start */
+.login_container {
+  font-family: "Times New Roman", Times, serif;
+  height: 400px;
+  width: 500px;
+  margin-top: 5%;
+  margin-bottom: 100px;
+  text-align: center;
+  box-shadow: 1px 1px #b2b2b2;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.mb-3 {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 10%;
+  text-align: left;
+}
+
+form > h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+span {
+  text-align: right;
+  margin-left: 80px;
+}
+
+.login-btn-container {
+  margin-top: 20px;
+  padding: 10px, 10px, 10px, 10px;
+  text-align: center;
+  margin-right: 10%;
+}
+/* login page style end*/
+
+/*  Registration page style start */
+.form-container {
+  margin-top: 5%;
+  margin-bottom: 100px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px 20px 20px 50px;
+  box-shadow: 1px 1px #b2b2b2;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.lable {
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.row-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+div > button,
+a {
+  margin-right: 10px;
+}
+/*  Registration page style end */
+
+/* Reset password style start */
+.reset-btn-container,
+.anchor-tag , .reset_container{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reset-button {
+  width: 50%;
+  text-align: center;
+}
+
+.reset_container {
+  font-family: "Times New Roman", Times, serif;
+  height: 400px;
+  width: 500px;
+  margin-top: 5%;
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 1px 1px #b2b2b2;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.reset-email{
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+}
+
+.resetemail-lable{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.anchor-tag{
+  margin-top: 15%;
+}
+/* Reset password style end */
