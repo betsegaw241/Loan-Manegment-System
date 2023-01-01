@@ -141,11 +141,27 @@ cursor: pointer;
 background-color: rgb(68, 122, 222);
 }
 .counter{
-    font-size:xx-large;
+    font-size:x-large;
     font-weight: bold;
     text-align: center;
-  margin-top: 5%;
+    flex-grow: 2;
+ 
    
+}
+.card_counter__container{
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 5%;
+
+}
+.card_img{
+    opacity: 0.2;
+    flex-grow: 1;
+
+text-align: center;
+    justify-content: center;
 }
 .card_title{
     text-align: center;
