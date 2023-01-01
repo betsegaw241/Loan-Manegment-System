@@ -1,251 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../styles/AdminPage.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
 
-  <body>
-    <div class="main">
-      <div class="side_bar side_display__bar">
-        <h4>Admin</h4>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../styles/AdminPage.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
 
-        <div class="sidebar__menu home">
-          <div>
-            <img
-              src="../../Assets/admin/home_circle_icon.png"
-              alt="home"
-              width="30"
-            />
-          </div>
-          <p class="menu_item">Home</p>
+<body>
+  <div class="main">
+    <div class="side_bar side_display__bar">
+      <h4>Admin</h4>
+
+      <div class="sidebar__menu home">
+        <div>
+          <img src="../../Assets/admin/home_circle_icon.png" alt="home" width="30" />
         </div>
-
-        <div class="sidebar__menu users">
-          <div>
-            <img src="../../Assets/admin/user.png" alt="users" width="30" />
-          </div>
-          <p class="menu_item">Users</p>
-        </div>
-
-        <div class="sidebar__menu loan">
-          <div>
-            <img src="../../Assets/admin/loan.png" alt="loan" width="30" />
-          </div>
-          <p class="menu_item">Loan</p>
-        </div>
-
-        <div class="sidebar__menu borrowers">
-          <div>
-            <img
-              src="../../Assets/admin/group.png"
-              alt="borrowers"
-              width="30"
-            />
-          </div>
-          <p class="menu_item">Borrowers</p>
-        </div>
-
-        <div class="sidebar__menu loan_plan">
-          <div>
-            <img
-              src="../../Assets/admin/loan-plan.png"
-              alt="loan plans"
-              width="30"
-              height="30"
-            />
-          </div>
-          <p class="menu_item">Loan plans</p>
-        </div>
+        <p class="menu_item">Home</p>
       </div>
 
-
-      <div class="main_content">
-        <div class="navigation_bar">
-          <button class="menu_btn">
-            <ion-icon class="btn" name="menu-outline"></ion-icon>
-            <ion-icon class="btn" name="close-outline"></ion-icon>
-          </button>
-          <div class="label">
-            <p>Loan Manegment System</p>
-          </div>
-<div class="user_profile">
-<div>
-    <img src="../../Assets/admin/profile.png" alt="profile" width="30">
-</div>
-
-           </div>
-       </div>
-         <h1 class="dashboard ">Dashboard</h1>
-       <div class="card_container"  >
-     
-        
-<div class="card ">
-<div class="card_title">Active loans</div>
-<div class="card_counter__container">
-<div class="counter">0</div>
-<div class="card_img"><img src="../../Assets/admin/money-bag.png" alt="active loans" width="40"></div>
-</div>
-<div class ="more_info">
-    <p class="text">view list</p>
-    <p class="text">></p>
-</div>
-</div>
-<div class="card">
-<div class="card_title">Payment today</div>
-<div class="card_counter__container">
-<div class="counter"><span>0.00</span> Birr</div>
-<div class="card_img"><img src="../../Assets/admin/money.png" alt="active loans" width="40"></div>
-</div>
-
-<div class ="more_info">
-    <p class="text">view list</p>
-    <p class="text">></p>
-</div>
-</div>
-<div class="card">
-<div class="card_title">Borrowers</div>
-<div class="card_counter__container">
-<div class="counter">0</div>
-<div class="card_img"><img src="../../Assets/admin/bank.png" alt="active loans" width="40"></div>
-</div>
-
-<div class ="more_info">
-    <p class="text">view list</p>
-    <p class="text">></p>
-</div>
-</div>
-       </div>
-     
-        <div class="table_container">
-            <h3>Users</h3>
- <table>
-  <tr>
-    <th>No</th>
-    <th>Username</th>
-    <th>Address</th> 
-    <th>Contact</th>
-    <th>Actions</th>
-  </tr>
-  <tr>
-    <td> 1</td>
-    <td> Anders</td>
-    <td>Germany</td>
-    <td> Futterkiste</td>
-   
-    <td><select name="select" class="form-select " id="users_list_Action__select">
-      <option value="">select</option>
-      <option value="Freez" class="users_list_freez">Freez</option>
-      <option value="Delete" class="users_list_delete">Delete</option>
-    </select></td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td> 
-    <td>Centro comerci</td>
-    
-    <td><select name="select" class="form-select " id="users_list_Action__select">
-      <option value="">select</option>
-      <option value="Freez" class="users_list_freez">Freez</option>
-      <option value="Delete" class="users_list_delete">Delete</option>
-    </select></td>
-  </tr>
-  
-</table>
-       
-       </div> 
-       <div class="table_container borrowers__container">
-            <h3>Borrowers</h3>
- <table>
-  <tr>
-    <th>No</th>
-    <th>First Name</th>
-    <th>Last Name</th> 
-    <th>Amount</th>
-    <th>Date</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Maria Anders</td>
-    <td>Anders</td>
-    <td>2333</td>
-    <td>1/11/2333 </td>
-    <td>paid</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Francisco </td>
-    <td>Mexico</td> 
-  <td>2333</td>
-    <td>1/11/2333 </td>
-    <td>paid</td>
-  </tr>
-  
-</table>
-       
-       </div>    
-       <div class="table_container loans__container">
-            <h3>Loans</h3>
- <table>
-  <tr>
-    <th>No</th>
-    <th>First Name</th>
-    <th>Last Name</th> 
-    <th>Amount</th>
-    <th>Borrow Date</th>
-    <th>Return Date</th>
-    <th>Interset</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>15%</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td> 
-    <td>Centro comerci</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-    <td>20%</td>
-  </tr>
-  
-</table>
-       
-       </div>
-    </div>
-</div>
-        <div class="table_container loanPlans__container">
-          <h3 class="text-primary">loan Plans</h3>
+      <div class="sidebar__menu users">
+        <div>
+          <img src="../../Assets/admin/user.png" alt="users" width="30" />
         </div>
+        <p class="menu_item">Users</p>
+      </div>
+
+      <div class="sidebar__menu loan">
+        <div>
+          <img src="../../Assets/admin/loan.png" alt="loan" width="30" />
+        </div>
+        <p class="menu_item">Loan</p>
+      </div>
+
+      <div class="sidebar__menu borrowers">
+        <div>
+          <img src="../../Assets/admin/group.png" alt="borrowers" width="30" />
+        </div>
+        <p class="menu_item">Borrowers</p>
+      </div>
+
+      <div class="sidebar__menu loan_plan">
+        <div>
+          <img src="../../Assets/admin/loan-plan.png" alt="loan plans" width="30" height="30" />
+        </div>
+        <p class="menu_item">Loan plans</p>
       </div>
     </div>
 
-     <script src="../../scripts/admin/script.js"></script>
+
+    <div class="main_content">
+      <div class="navigation_bar">
+        <button class="menu_btn">
+          <ion-icon class="btn" name="menu-outline"></ion-icon>
+          <ion-icon class="btn" name="close-outline"></ion-icon>
+        </button>
+        <div class="label">
+          <p>Loan Manegment System</p>
+        </div>
+        <div class="user_profile">
+          <div>
+            <img src="../../Assets/admin/profile.png" alt="profile" width="30">
+          </div>
+        </div>
+      </div>
+      <h1 class="dashboard ">Dashboard</h1>
+      <div class="card_container">
+        <div class="card ">
+          <div class="card_title">Active loans</div>
+          <div class="card_counter__container">
+            <div class="counter">0</div>
+            <div class="card_img"><img src="../../Assets/admin/money-bag.png" alt="active loans" width="40"></div>
+          </div>
+          <div class="more_info">
+            <p class="text">view list</p>
+            <p class="text">></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_title">Payment today</div>
+          <div class="card_counter__container">
+            <div class="counter"><span>0.00</span> Birr</div>
+            <div class="card_img"><img src="../../Assets/admin/money.png" alt="active loans" width="40"></div>
+          </div>
+
+          <div class="more_info">
+            <p class="text">view list</p>
+            <p class="text">></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_title">Borrowers</div>
+          <div class="card_counter__container">
+            <div class="counter">0</div>
+            <div class="card_img"><img src="../../Assets/admin/bank.png" alt="active loans" width="40"></div>
+          </div>
+
+          <div class="more_info">
+            <p class="text">view list</p>
+            <p class="text">></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="table_container">
+        <h3>Users</h3>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>Username</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td> 1</td>
+            <td> Anders</td>
+            <td>Germany</td>
+            <td> Futterkiste</td>
+
+            <td><select name="select" class="form-select " id="users_list_Action__select">
+                <option value="">select</option>
+                <option value="Freez" class="users_list_freez">Freez</option>
+                <option value="Delete" class="users_list_delete">Delete</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Centro comerci</td>
+
+            <td><select name="select" class="form-select " id="users_list_Action__select">
+                <option value="">select</option>
+                <option value="Freez" class="users_list_freez">Freez</option>
+                <option value="Delete" class="users_list_delete">Delete</option>
+              </select></td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="table_container borrowers__container">
+        <h3>Borrowers</h3>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Maria Anders</td>
+            <td>Anders</td>
+            <td>2333</td>
+            <td>1/11/2333 </td>
+            <td>paid</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Francisco </td>
+            <td>Mexico</td>
+            <td>2333</td>
+            <td>1/11/2333 </td>
+            <td>paid</td>
+          </tr>
+
+        </table>
+
+      </div>
+      <div class="table_container loans__container">
+        <h3>Loans</h3>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Amount</th>
+            <th>Borrow Date</th>
+            <th>Return Date</th>
+            <th>Interset</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Centro comerci</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>20%</td>
+          </tr>
+
+        </table>
+
+      </div>
+   <!-- loan plan page start -->
+    <div class="loanPlans__container ">
+      <h3 class="text-primary">Loan Plans</h3>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="mb-3">
+            <label class="form-label">Loan Type</label>
+            <input type="text" class="form-control" id="loanType" placeholder="Ex. house loan">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pay back month</label>
+            <input type="number" class="form-control" id="plan" placeholder="Ex. 12">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Interest(%)</label>
+            <input type="number" class="form-control" id="interest" placeholder="Ex, 12">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Monthly overdue Penalty(%)</label>
+            <input type="number" class="form-control" id="penality" placeholder="Ex, 12">
+          </div>
+          <div class="mb-3 save__button__container">
+            <button class="btn-primary">Save</button>
+          </div>
+        </div>
+
+        <div class="col-md-auto">
+          <table>
+            <tr>
+              <th>No</th>
+              <th>Type</th>
+              <th>Payback Month</th>
+              <th>Interest(%)</th>
+              <th>Monthly overdue penality(%)</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>House Loan</td>
+              <td>12</td>
+              <td>14</td>
+              <td>12</td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle">
+                    Action
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Car Loan</td>
+              <td>8</td>
+              <td>14</td>
+              <td>12</td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle">
+                    Action
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- loan plan page ends -->
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="../../scripts/admin/script.js"></script>
 </body>
+
 </html>
