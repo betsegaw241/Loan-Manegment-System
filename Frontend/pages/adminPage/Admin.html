@@ -67,13 +67,16 @@
 
            </div>
        </div>
-          <h1 class="dashboard ">Dashboard</h1>
+         <h1 class="dashboard ">Dashboard</h1>
        <div class="card_container"  >
      
         
 <div class="card ">
 <div class="card_title">Active loans</div>
+<div>
 <div class="counter">0</div>
+
+</div>
 <div class ="more_info">
     <p class="text">view list</p>
     <p class="text">></p>
@@ -101,28 +104,35 @@
             <h3>Users</h3>
  <table>
   <tr>
-    <th>Company</th>
+    <th>No</th>
+    <th>Username</th>
+    <th>Address</th> 
     <th>Contact</th>
-    <th>Country</th> 
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Actions</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
+    <td> 1</td>
+    <td> Anders</td>
     <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td> Futterkiste</td>
+   
+    <td><select name="select" class="form-select " id="users_list_Action__select">
+      <option value="">select</option>
+      <option value="Freez" class="users_list_freez">Freez</option>
+      <option value="Delete" class="users_list_delete">Delete</option>
+    </select></td>
   </tr>
   <tr>
-    <td>Centro comerci</td>
+    <td>2</td>
     <td>Francisco Chang</td>
     <td>Mexico</td> 
     <td>Centro comerci</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    
+    <td><select name="select" class="form-select " id="users_list_Action__select">
+      <option value="">select</option>
+      <option value="Freez" class="users_list_freez">Freez</option>
+      <option value="Delete" class="users_list_delete">Delete</option>
+    </select></td>
   </tr>
   
 </table>
@@ -132,28 +142,28 @@
             <h3>Borrowers</h3>
  <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th> 
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>No</th>
+    <th>First Name</th>
+    <th>Last Name</th> 
+    <th>Amount</th>
+    <th>Date</th>
+    <th>Status</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>1</td>
     <td>Maria Anders</td>
-    <td>Germany</td>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>Anders</td>
+    <td>2333</td>
+    <td>1/11/2333 </td>
+    <td>paid</td>
   </tr>
   <tr>
-    <td>Centro comerci</td>
-    <td>Francisco Chang</td>
+    <td>2</td>
+    <td>Francisco </td>
     <td>Mexico</td> 
-    <td>Centro comerci</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+  <td>2333</td>
+    <td>1/11/2333 </td>
+    <td>paid</td>
   </tr>
   
 </table>
@@ -163,28 +173,31 @@
             <h3>Loans</h3>
  <table>
   <tr>
-    <th>Name</th>
-    <th>Location</th>
-    <th>Contact</th> 
-    <th>Company</th>
+    <th>No</th>
+    <th>First Name</th>
+    <th>Last Name</th> 
     <th>Amount</th>
-    <th>Date</th>
+    <th>Borrow Date</th>
+    <th>Return Date</th>
+    <th>Interset</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>1</td>
     <td>Maria Anders</td>
     <td>Germany</td>
     <td>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
     <td>Germany</td>
+    <td>15%</td>
   </tr>
   <tr>
-    <td>Centro comerci</td>
+    <td>1</td>
     <td>Francisco Chang</td>
     <td>Mexico</td> 
     <td>Centro comerci</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
+    <td>20%</td>
   </tr>
   
 </table>
@@ -194,6 +207,6 @@
 </div>
 
 
-    <script src="../../scripts/admin/script.js"></script>
+     <script src="../../scripts/admin/script.js"></script>
 </body>
 </html>

@@ -15,7 +15,6 @@
     align-items: center;
     color: white;
     font-size: medium;
-    font-weight: bold;
     text-decoration: none;
     padding-top: 2%;
     gap: 15px;
@@ -116,7 +115,7 @@ justify-content: space-around;
     border-radius:5px;
    box-shadow: 3px 6px #e0dfdf;
    
-   border-left: 3px solid  rgb(128, 162, 225);
+   border-left: 4px solid  rgb(9, 26, 255);
   
 }
 .text{
@@ -195,6 +194,7 @@ tr:nth-child(even) {
     border-radius: 6px;
 border: none;
     display: none;
+    padding: 6px;
 }
 .menu_btn:hover{
 background-color: white;
@@ -221,6 +221,18 @@ background-color: white;
     padding-top: 12vh;
     color: white;
 }
+ 
+.form-select{
+   
+ height:30px;
+    border: none;
+    outline: none;
+   background-color: transparent;
+   margin: 0px;
+   width:100px;
+
+}
+
 
 
 
@@ -251,6 +263,9 @@ background-color: white;
     .menu_btn{
         display: block;
     }
+    /* .navigation_bar{
+        background-color:  rgb(68, 122, 222);
+    } */
     
 }
 @media (max-width: 630px){
